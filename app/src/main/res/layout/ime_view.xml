@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The keyboard's entire visible surface. Deliberately minimal (per mobile
+  design guidance: one primary action, big touch target, thumb zone).
+  This is a dictation-only keyboard, not a full QWERTY replacement. Users
+  switch back to their normal keyboard for typing via the globe button.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:background="@color/ime_background"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="12dp">
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="#374151"
+        android:text="@string/mic_tap_to_speak" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp">
+
+        <!-- Switch keyboard. 48dp minimum touch target per platform guidance. -->
+        <ImageButton
+            android:id="@+id/btn_switch_ime"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_round_button"
+            android:contentDescription="@string/home_switch_keyboard"
+            android:padding="12dp"
+            android:src="@drawable/ic_globe" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <!-- Primary action: large (96dp, well above the 48dp minimum) since this
+             is the one thing this keyboard exists to do. -->
+        <FrameLayout
+            android:id="@+id/btn_mic"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="@drawable/bg_mic_idle">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_mic"
+                android:contentDescription="@string/mic_tap_to_speak" />
+        </FrameLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <!-- Quick backspace so small corrections don't require switching keyboards. -->
+        <ImageButton
+            android:id="@+id/btn_backspace"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_round_button"
+            android:contentDescription="@string/action_delete"
+            android:padding="12dp"
+            android:src="@drawable/ic_backspace" />
+    </LinearLayout>
+</LinearLayout>

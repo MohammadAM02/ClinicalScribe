@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mic_idle">#2563EB</color>
+    <color name="mic_listening">#DC2626</color>
+    <color name="mic_processing">#F59E0B</color>
+    <color name="ime_background">#F8FAFC</color>
+    <color name="ime_background_dark">#111827</color>
+</resources>

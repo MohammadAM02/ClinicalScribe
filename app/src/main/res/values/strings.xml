@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Clinical Scribe</string>
+    <string name="ime_subtype_label">Dictation</string>
+
+    <string name="home_title">Clinical Scribe</string>
+    <string name="home_model_not_ready">On-device speech model not downloaded yet</string>
+    <string name="home_model_ready">Speech model ready (on-device, offline)</string>
+    <string name="home_keyboard_not_enabled">Keyboard not enabled yet</string>
+    <string name="home_keyboard_enabled">Keyboard enabled</string>
+    <string name="home_download_model">Download speech model (~650 MB)</string>
+    <string name="home_enable_keyboard">Enable keyboard in Settings</string>
+    <string name="home_switch_keyboard">Choose keyboard</string>
+    <string name="home_vocabulary">Vocabulary</string>
+    <string name="home_snippets">Snippets</string>
+    <string name="home_settings">Settings</string>
+
+    <string name="mic_tap_to_speak">Tap to dictate</string>
+    <string name="mic_listening">Listening…</string>
+    <string name="mic_processing">Transcribing…</string>
+    <string name="mic_permission_needed">Microphone permission needed</string>
+    <string name="mic_model_missing">Model not downloaded. Open Clinical Scribe app first.</string>
+
+    <string name="vocabulary_title">Vocabulary</string>
+    <string name="vocabulary_subtitle">Words and phrases the speech model should recognize accurately. Add terms you notice it getting wrong.</string>
+    <string name="vocabulary_add_hint">Add a word or phrase</string>
+    <string name="vocabulary_empty">No vocabulary entries yet. Add drug names, diagnoses, or terms specific to your practice.</string>
+
+    <string name="snippets_title">Snippets</string>
+    <string name="snippets_subtitle">Say a trigger phrase and it expands into full text — useful for standard exam findings.</string>
+    <string name="snippets_trigger_hint">Trigger phrase (what you say)</string>
+    <string name="snippets_expansion_hint">Expansion (what gets typed)</string>
+    <string name="snippets_empty">No snippets yet.</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_enhanced_recognition">Enhanced recognition</string>
+    <string name="settings_enhanced_recognition_desc">Uses beam search so vocabulary boosting actually takes effect. Slightly slower, more accurate.</string>
+    <string name="settings_import_title">Import from Chirp (desktop)</string>
+    <string name="settings_import_desc">Import vocabulary.json / snippets.json exported from the Windows/Mac Chirp app</string>
+
+    <string name="action_add">Add</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_import">Import</string>
+    <string name="action_retry">Retry</string>
+</resources>
