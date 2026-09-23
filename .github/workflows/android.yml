@@ -25,9 +25,8 @@ jobs:
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
-
-      - name: Install Android SDK platform and build tools
-        run: sdkmanager 'platforms;android-34' 'build-tools;34.0.0'
+        with:
+          packages: 'platform-tools platforms;android-34 build-tools;34.0.0'
 
       - name: Fetch sherpa-onnx native libraries
         shell: bash
